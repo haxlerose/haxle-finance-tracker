@@ -1,3 +1,3 @@
 # README
 
-This is an app to allow users to select stocks to track and follow.
+This is an app to allow users to create accounts and then search and select stocks to follow.
