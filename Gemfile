@@ -12,6 +12,7 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'stock_quote'
+gem 'font-awesome-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.11'
 # Use Puma as the app server
