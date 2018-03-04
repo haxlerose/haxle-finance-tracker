@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   get 'my_friends', to: 'users#my_friends'
   get 'search_friends', to: 'users#search'
   post 'add_friend', to: 'users#add_friend'
-  post 'user_stock_daily_change', to: 'user_stocks#daily_change'
+  get 'daily_stock_change', to: 'users#daily_change'
 
-  resources :user_stocks, only: [:create, :destroy, :daily_change]
-  resources :users, only: [:show]
+  resources :user_stocks, only: [:create, :destroy]
+  resources :users, only: [:show, :daily_change]
   resources :friendships
 end

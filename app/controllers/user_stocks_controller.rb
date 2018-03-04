@@ -19,8 +19,9 @@ class UserStocksController < ApplicationController
     redirect_to my_portfolio_path
   end
 
-  def daily_change
-    stock = Stock.find(params[:id])
+  def daily_change_not_working
+    @stock_test = UserStock.where(user_id: current_user.id, stock_id: stock.id).first
+    puts @stock_test.inspect
     today_stock = StockQuote::Stock.history("#{stock.symbol}", Date.today, Date.today)
     if today_stock[:history].empty?
       today_stock = StockQuote::Stock.history("#{stock.symbol}", 1.day.ago, 1.day.ago)
@@ -30,8 +31,7 @@ class UserStocksController < ApplicationController
     end
     today_stock_close = today_stock[:history][0][:close]
     yesterday_stock_close = yesterday_stock[:history][0][:close]
-    @daily_change = (today_stock_close - yesterday_stock_close).round(2)
+    @daily_change_amount = (today_stock_close - yesterday_stock_close).round(2)
   end
 
-  helper_method :daily_change
 end

@@ -11,4 +11,8 @@ class StocksController < ApplicationController
       format.js { render partial: 'users/result' }
     end
   end
+
+  def daily_change(user_stock)
+    @daily_change_amount = 1
+  end
 end
