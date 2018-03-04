@@ -37,11 +37,4 @@ class UsersController < ApplicationController
     end
     redirect_to my_friends_path
   end
-
-
-    def daily_change(user_stock)
-      @daily_change_amount = 1
-    end
-
-
 end
