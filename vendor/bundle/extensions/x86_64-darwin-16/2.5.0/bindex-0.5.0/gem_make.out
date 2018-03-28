@@ -1,0 +1,15 @@
+current directory: /Users/haxlerose/Projects/haxle-finance-tracker/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/haxlerose/.rvm/rubies/ruby-2.5.0/bin/ruby -r ./siteconf20180326-68457-eyzjun.rb extconf.rb
+creating Makefile
+
+current directory: /Users/haxlerose/Projects/haxle-finance-tracker/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/haxlerose/Projects/haxle-finance-tracker/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/haxlerose/Projects/haxle-finance-tracker/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20180326-68457-1nd4r2c/bindex
